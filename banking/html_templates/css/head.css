@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+.head-div{
+	width: 1100px;
+    height: 50px;
+    position: relative;
+    top: 4px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #888888
+}
+img.logo-img{
+	width: 40px;
+    height: 40px;
+}
+
+#logo{
+	font-size: 40px;   
+	font-weight: 600;          
+	width: 500px;
+	margin-left: 20px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding:0;
+	color: #E4E2E2;
+	float: left;
+}
+#Localization{ 
+	margin-left: 370px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-top: 15px;  
+	padding:0;       
+	width: 180px;
+	float: left;
+}

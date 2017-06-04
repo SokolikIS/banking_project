@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+	<bean id="usersDao" class="com.sokolik.banking.dao.jdbc.UsersDaoImpl" />
+	<bean id="usersInfoDao" class="com.sokolik.banking.dao.jdbc.UsersInfoDaoImpl" />
+	<bean id="DelUsersDao" class="com.sokolik.banking.dao.jdbc.DelUsersDaoImpl" />
+	<bean id="BankingCardsDao" class="com.sokolik.banking.dao.jdbc.BankingCardsDaoImpl" />
+	<bean id="TransactionsDao" class="com.sokolik.banking.dao.jdbc.TransactionsDaoImpl" />
+
+</beans>
+
+
+
+
+
+
+
+

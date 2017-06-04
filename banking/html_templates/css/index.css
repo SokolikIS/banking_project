@@ -1,0 +1,89 @@
+@CHARSET "UTF-8";
+
+.back-div{
+	width: 100%;      
+	height: 100%;     
+	position: fixed;
+	top: 0;           
+    left: 0;         
+    overflow: auto;  
+	background: #E4E2E2
+}
+
+.logo-img2{
+	margin-top: 3px;
+	width: 110px;
+    height: 40px;
+}
+.logo-img3{
+	margin-top: 3px;
+	width: 200px;
+    height: 40px;
+}
+
+.main-div{
+	width: 1100px;
+    height: 800px;
+    position: relative;
+    top: 8px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #888888
+}
+.td-main{
+	width: 550px;
+	text-align: center;
+	padding-top: 50px;
+	vertical-align: top;
+}
+
+form {
+	margin-top: 20px;
+    padding: 20px;           
+    font-family: Arial;
+    font-size: 20px;         
+    display: inline-block;
+	background-color: #888888;
+    color: #E4E2E2;           
+    border: 2px solid #E4E2E2;
+}
+
+input{
+	width: 350px;
+	height: 40px;
+}
+
+.ch{
+	width: 15px;
+	height: 15px;
+}
+.auLabel{
+	font-size: 40px;   
+	font-weight: 600;  
+	margin: 0;         
+	color: #E4E2E2;
+}
+.infLabel{
+	float: left;
+	margin-top: 10px;
+}
+.chLabel{
+	font-size: 15px;
+}
+.button1{
+	border: 1px;
+	background-color: #E4E2E2;
+}
+.button1:hover { background: rgba(255,255,255,.2); }
+
+.button2{
+	border: 1px;
+	background-color: #E4E2E2;
+	width: 212px;
+	height: 50px;
+}
+.button2:hover { background: rgba(255,255,255,.2); }
+
+
