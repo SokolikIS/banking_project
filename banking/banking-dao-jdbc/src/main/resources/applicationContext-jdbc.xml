@@ -6,9 +6,9 @@
 
 	<bean id="usersDao" class="com.sokolik.banking.dao.jdbc.UsersDaoImpl" />
 	<bean id="usersInfoDao" class="com.sokolik.banking.dao.jdbc.UsersInfoDaoImpl" />
-	<bean id="DelUsersDao" class="com.sokolik.banking.dao.jdbc.DelUsersDaoImpl" />
-	<bean id="BankingCardsDao" class="com.sokolik.banking.dao.jdbc.BankingCardsDaoImpl" />
-	<bean id="TransactionsDao" class="com.sokolik.banking.dao.jdbc.TransactionsDaoImpl" />
+	<bean id="delUsersDao" class="com.sokolik.banking.dao.jdbc.DelUsersDaoImpl" />
+	<bean id="bankingCardsDao" class="com.sokolik.banking.dao.jdbc.BankingCardsDaoImpl" />
+	<bean id="transactionsDao" class="com.sokolik.banking.dao.jdbc.TransactionsDaoImpl" />
 
 </beans>
 
