@@ -40,7 +40,7 @@ public class BankingCardsDaoImpl implements BankingCardsDao{
 			statement.setInt(1, ob.getId_card());
 			statement.setString(2, ob.getNumber());
 			statement.setString(3, ob.getDate());
-			statement.setInt(4, ob.getCurrency());
+			statement.setString(4, ob.getCurrency());
 			
 			statement.executeUpdate();
 
@@ -68,7 +68,7 @@ public class BankingCardsDaoImpl implements BankingCardsDao{
 			statement.setInt(1, ob.getId_card());
 			statement.setString(2, ob.getNumber());
 			statement.setString(3, ob.getDate());
-			statement.setInt(4, ob.getCurrency());
+			statement.setString(4, ob.getCurrency());
 			statement.setInt(5, ob.getId_card());
 
 			statement.executeUpdate();
@@ -118,7 +118,7 @@ public class BankingCardsDaoImpl implements BankingCardsDao{
 				Integer idUser = resultSet.getInt("id_user");
 				String number = resultSet.getString("number");
 				String date = resultSet.getString("date");
-				Integer currency = resultSet.getInt("currency");
+				String currency = resultSet.getString("currency");
 				
 
 				BankingCards card = new BankingCards();
@@ -157,7 +157,7 @@ public class BankingCardsDaoImpl implements BankingCardsDao{
 				Integer idUser = resultSet.getInt("id_user");
 				String number = resultSet.getString("number");
 				String date = resultSet.getString("date");
-				Integer currency = resultSet.getInt("currency");
+				String currency = resultSet.getString("currency");
 				
 
 				BankingCards card = new BankingCards();
@@ -196,7 +196,7 @@ public class BankingCardsDaoImpl implements BankingCardsDao{
 				Integer idUser = resultSet.getInt("id_user");
 				String number = resultSet.getString("number");
 				String date = resultSet.getString("date");
-				Integer currency = resultSet.getInt("currency");
+				String currency = resultSet.getString("currency");
 				
 
 				BankingCards card = new BankingCards();

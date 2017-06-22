@@ -13,7 +13,7 @@ public class BankingCards {
 	
 	private String date;
 	
-	private int currency;
+	private String currency;
 
 	public BankingCards() {
 	}
@@ -26,7 +26,7 @@ public class BankingCards {
 
 	}
 
-	public BankingCards(int id_user, String number, String date, int currency) {
+	public BankingCards(int id_user, String number, String date, String currency) {
 
 		this.id_user = id_user;
 		this.number = number;
@@ -34,7 +34,7 @@ public class BankingCards {
 		this.currency = currency;
 	}
 
-	public BankingCards(int id_card, int id_user, String number, String date, int currency) {
+	public BankingCards(int id_card, int id_user, String number, String date, String currency) {
 
 		this.id_card = id_card;
 		this.id_user = id_user;
@@ -75,11 +75,11 @@ public class BankingCards {
 		this.date = date;
 	}
 
-	public int getCurrency() {
+	public String getCurrency() {
 		return currency;
 	}
 
-	public void setCurrency(int currency) {
+	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
@@ -87,7 +87,7 @@ public class BankingCards {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + currency;
+		result = prime * result + ((currency == null) ? 0 : currency.hashCode());
 		result = prime * result + ((date == null) ? 0 : date.hashCode());
 		result = prime * result + id_card;
 		result = prime * result + id_user;
@@ -104,7 +104,10 @@ public class BankingCards {
 		if (getClass() != obj.getClass())
 			return false;
 		BankingCards other = (BankingCards) obj;
-		if (currency != other.currency)
+		if (currency == null) {
+			if (other.currency != null)
+				return false;
+		} else if (!currency.equals(other.currency))
 			return false;
 		if (date == null) {
 			if (other.date != null)
@@ -125,8 +128,10 @@ public class BankingCards {
 
 	@Override
 	public String toString() {
-		return "Cards [id_card=" + id_card + ", id_user=" + id_user + ", number=" + number + ", date=" + date
+		return "BankingCards [id_card=" + id_card + ", id_user=" + id_user + ", number=" + number + ", date=" + date
 				+ ", currency=" + currency + "]";
 	}
+
+	
 
 }

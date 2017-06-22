@@ -37,7 +37,13 @@ CREATE TABLE banking_cards (
 					 id_user INT,
 					 number VARCHAR(45) NOT NULL UNIQUE,
 					 date VARCHAR(45) NOT NULL,
-					 currency INT);
+					 currency VARCHAR(45) NOT NULL);
+					 
+CREATE TABLE banking_accounts (
+					 id_account INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+					 id_user INT,
+					 id_card INT,
+					 balance INTEGER);
 					 
 CREATE TABLE transactions (
 					 id_transaction INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
